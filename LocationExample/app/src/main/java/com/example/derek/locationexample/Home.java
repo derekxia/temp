@@ -1,5 +1,6 @@
 package com.example.derek.locationexample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,6 +30,14 @@ public class Home extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.title_activity_about) {
+            Intent giovanni = new Intent(this, About.class);
+            startActivity(giovanni);
+            return true;
+        }
+
+
+        if (id == R.id.action_add) {
+            // Add user input to SQL Database
             return true;
         }
 

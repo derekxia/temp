@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+
+        if (id == R.id.action_add) {
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
     public void openAbout(View view){
