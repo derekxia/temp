@@ -1,23 +1,22 @@
 package com.example.derek.locationexample;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Home extends AppCompatActivity {
+public class Add extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_add);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_add, menu);
         return true;
     }
 
@@ -29,16 +28,7 @@ public class Home extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.title_activity_about) {
-            Intent about = new Intent(this, About.class);
-            startActivity(about);
-            return true;
-        }
-
-
-        if (id == R.id.action_add) {
-            Intent addElement = new Intent(this, Add.class);
-            startActivity(addElement);
+        if (id == R.id.action_settings) {
             return true;
         }
 
