@@ -15,7 +15,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
 
-public class GooglePlayServicesActivity extends Activity implements
+public class
+        GooglePlayServicesActivity extends Activity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
@@ -126,6 +127,8 @@ public class GooglePlayServicesActivity extends Activity implements
         }
         System.out.println(mLastLocation.getLatitude());
         System.out.println(mLastLocation.getLongitude());
+        Intent toHome = new Intent(this, Home.class);
+        startActivity(toHome);
     }
 
     /**
