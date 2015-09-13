@@ -30,8 +30,8 @@ public class Home extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.title_activity_about) {
-            Intent giovanni = new Intent(this, About.class);
-            startActivity(giovanni);
+            Intent about = new Intent(this, About.class);
+            startActivity(about);
             return true;
         }
 
